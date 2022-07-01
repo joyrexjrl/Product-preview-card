@@ -76,7 +76,7 @@ select {
 
 /* page style start */
 
-h1, .newCost{
+h1, .new-cost{
     font-family: 'Fraunces', serif;
 }
 
@@ -111,12 +111,12 @@ body{
     gap: 2rem;
 }
 
-.newCost{
+.new-cost{
     color: hsl(158, 36%, 37%);
     font-size: 1.8rem;    
 }
 
-.oldCost{
+.old-cost{
     color: hsl(228, 12%, 48%);
     font-size: 0.875rem;
     text-decoration: line-through;
@@ -132,14 +132,18 @@ body{
     background-color: white; 
     width: 90%;
     margin-inline: auto;
-    margin-top: 5%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.desktopImage{
+.desktop-image{
   display: none;
 }
 
-.mobileImage{  
+.mobile-image{  
     width: 100%; 
     height: auto;
     object-fit: contain;
@@ -164,12 +168,12 @@ body{
     color:hsl(228, 12%, 48%);
 }
 
-@media (min-width: 376px){
+@media (min-width: 700px){
     .container{
         max-width: 800px;
     }
 
-    .desktopLayout{
+    .desktop-layout{
         display: flex;
         gap: 1rem; 
         justify-content: space-between;       
@@ -179,11 +183,11 @@ body{
         margin-right: 1rem;
     }
 
-    .mobileImage{
+    .mobile-image{
       display: none;
     }
 
-    .desktopImage{
+    .desktop-image{
         display: block;
         width: 100%;       
         border-radius: 10px 0 0 10px;        
